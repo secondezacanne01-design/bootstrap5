@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap 5 Website</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bs-body-bg);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .feature-card {
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card {
+            transition: 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            padding: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold text-primary" href="#home">
+            <i class="bi bi-bootstrap me-2"></i>
+            Bootstrap5 Website
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">
+                        Features
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">
+                        Pricing
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">
+                        Reviews
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- Dark Mode -->
+                <li class="nav-item ms-lg-3">
+                    <button class="btn btn-outline-secondary btn-sm rounded-pill"
+                            id="themeToggle">
+
+                        <i class="bi bi-moon-stars-fill"
+                           id="themeIcon"></i>
+
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+<header class="hero text-center" id="home">
+
+    <div class="container">
+
+        <span class="badge bg-light text-primary mb-3 px-3 py-2">
+            Version 5.3.8
+        </span>
+
+        <h1 class="display-3 fw-bold mb-3">
+            Build Fast, Responsive Websites
+        </h1>
+
+        <p class="lead mb-4">
+            Create beautiful and responsive websites using
+            Bootstrap 5. It is simple, powerful, and mobile-friendly.
+        </p>
+
+        <a href="#pricing"
+           class="btn btn-light btn-lg me-2">
+            Get Started
+        </a>
+
+        <a href="#features"
+           class="btn btn-outline-light btn-lg">
+            Learn More
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="py-5 bg-body-secondary">
+
+    <div class="container py-4">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Powerful Features
+            </h2>
+
+            <p class="text-body-secondary">
+                Everything you need to create a modern website.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Feature 1 -->
+            <div class="col-md-4">
+
+                <div class="card h-100 border-0 shadow-sm feature-card">
+
+                    <div class="card-body text-center p-4">
+
+                        <i class="bi bi-phone display-4 text-primary"></i>
+
+                        <h4 class="fw-bold mt-3">
+                            Mobile Friendly
+                        </h4>
+
+                        <p class="text-body-secondary">
+                            Your website automatically adjusts
+                            to phones, tablets, and computers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="col-md-4">
+
+                <div class="card h-100 border-0 shadow-sm feature-card">
+
+                    <div class="card-body text-center p-4">
+
+                        <i class="bi bi-moon-stars display-4 text-primary"></i>
+
+                        <h4 class="fw-bold mt-3">
+                            Dark Mode
+                        </h4>
+
+                        <p class="text-body-secondary">
+                            Switch between light mode and
+                            dark mode with one button.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 3 -->
+            <div class="col-md-4">
+
+                <div class="card h-100 border-0 shadow-sm feature-card">
+
+                    <div class="card-body text-center p-4">
+
+                        <i class="bi bi-lightning-charge display-4 text-primary"></i>
+
+                        <h4 class="fw-bold mt-3">
+                            Fast & Simple
+                        </h4>
+
+                        <p class="text-body-secondary">
+                            Build websites faster using
+                            Bootstrap's ready-made components.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="py-5">
+
+    <div class="container py-4">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Flexible Pricing
+            </h2>
+
+            <p class="text-body-secondary">
+                Choose the plan that works for you.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Starter -->
+            <div class="col-lg-4">
+
+                <div class="card border-0 shadow-sm pricing-card h-100">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold text-muted">
+                            Starter
+                        </h5>
+
+                        <h1 class="display-5 fw-bold">
+                            ₱0
+                            <span class="fs-6 text-muted">/month</span>
+                        </h1>
+
+                        <ul class="list-unstyled my-4">
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                1 Project
+                            </li>
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                Community Support
+                            </li>
+
+                            <li class="mb-2 text-muted">
+                                <i class="bi bi-x"></i>
+                                Custom Domain
+                            </li>
+
+                        </ul>
+
+                        <button class="btn btn-outline-primary w-100">
+                            Sign Up Free
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pro -->
+            <div class="col-lg-4">
+
+                <div class="card border-primary border-2 shadow-lg pricing-card h-100">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-primary">
+                            Most Popular
+                        </span>
+
+                        <h5 class="fw-bold text-primary mt-3">
+                            Pro Developer
+                        </h5>
+
+                        <h1 class="display-5 fw-bold">
+                            ₱49
+                            <span class="fs-6 text-muted">/month</span>
+                        </h1>
+
+                        <ul class="list-unstyled my-4">
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                Unlimited Projects
+                            </li>
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                Priority Support
+                            </li>
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                Custom Domain
+                            </li>
+
+                        </ul>
+
+                        <button class="btn btn-primary w-100">
+                            Get Started
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Enterprise -->
+            <div class="col-lg-4">
+
+                <div class="card border-0 shadow-sm pricing-card h-100">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold text-muted">
+                            Enterprise
+                        </h5>
+
+                        <h1 class="display-5 fw-bold">
+                            ₱109
+                            <span class="fs-6 text-muted">/month</span>
+                        </h1>
+
+                        <ul class="list-unstyled my-4">
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                Dedicated Server
+                            </li>
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                24/7 Support
+                            </li>
+
+                            <li class="mb-2">
+                                <i class="bi bi-check2 text-primary"></i>
+                                SLA Guarantee
+                            </li>
+
+                        </ul>
+
+                        <button class="btn btn-outline-primary w-100">
+                            Contact Sales
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+<section id="reviews"
+         class="py-5 bg-body-secondary text-center">
+
+    <div class="container py-4">
+
+        <h2 class="fw-bold mb-5">
+            What People Say
+        </h2>
+
+
+        <div id="reviewCarousel"
+             class="carousel slide"
+             data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+
+                <!-- Review 1 -->
+                <div class="carousel-item active">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-8">
+
+                            <p class="fs-5">
+                                "This website layout is simple,
+                                clean, and easy to use."
+                            </p>
+
+                            <h6 class="fw-bold">
+                                A'C Anne Secondez
+                            </h6>
+
+                            <small class="text-muted">
+                                Web Developer
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Review 2 -->
+                <div class="carousel-item">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-8">
+
+                            <p class="fs-5">
+                                "Bootstrap makes responsive
+                                website development much easier."
+                            </p>
+
+                            <h6 class="fw-bold">
+                                Ariane Secondez
+                            </h6>
+
+                            <small class="text-muted">
+                                UI Designer
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Previous Button -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+
+            </button>
+
+
+            <!-- Next Button -->
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-5">
+
+    <div class="container py-4"
+         style="max-width: 650px;">
+
+        <div class="text-center mb-4">
+
+            <h2 class="fw-bold">
+                Get In Touch
+            </h2>
+
+            <p class="text-body-secondary">
+                Fill out the form below to contact us.
+            </p>
+
+        </div>
+
+
+        <form>
+
+            <div class="row g-3">
+
+                <!-- First Name -->
+                <div class="col-sm-6">
+
+                    <label class="form-label">
+                        First Name
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           required>
+
+                </div>
+
+
+                <!-- Last Name -->
+                <div class="col-sm-6">
+
+                    <label class="form-label">
+                        Last Name
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           required>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="col-12">
+
+                    <label class="form-label">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                           class="form-control"
+                           placeholder="you@example.com"
+                           required>
+
+                </div>
+
+
+                <!-- Message -->
+                <div class="col-12">
+
+                    <label class="form-label">
+                        Message
+                    </label>
+
+                    <textarea class="form-control"
+                              rows="4"
+                              required></textarea>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit"
+                    class="btn btn-primary w-100 mt-4">
+                Submit Form
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-body-tertiary border-top text-center">
+
+    <div class="container">
+
+        <div class="mb-3 fs-4">
+
+            <a href="#" class="text-body-secondary mx-2">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" class="text-body-secondary mx-2">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="#" class="text-body-secondary mx-2">
+                <i class="bi bi-github"></i>
+            </a>
+
+        </div>
+
+        <small class="text-body-secondary">
+            © 2026 Ac Secondez. Built with Bootstrap 5.
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- ================= DARK MODE SCRIPT ================= -->
+<script>
+
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+
+    themeToggle.addEventListener("click", function () {
+
+        const html = document.documentElement;
+
+        if (html.getAttribute("data-bs-theme") === "dark") {
+
+            html.setAttribute("data-bs-theme", "light");
+
+            themeIcon.className = "bi bi-moon-stars-fill";
+
+        } else {
+
+            html.setAttribute("data-bs-theme", "dark");
+
+            themeIcon.className = "bi bi-sun-fill";
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
